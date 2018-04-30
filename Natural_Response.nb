@@ -1,0 +1,161 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5585,        153]
+NotebookOptionsPosition[      5136,        134]
+NotebookOutlinePosition[      5490,        150]
+CellTagsIndexPosition[      5447,        147]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "This", " ", "Program", " ", "gets", " ", "the", " ", "natural", " ", 
+    "response", " ", "of", " ", "a", " ", "simple", " ", "parallel", " ", 
+    "RLC", " ", "circuit", " ", "with", " ", "no", " ", "external", " ", 
+    "source"}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"R", " ", "=", " ", 
+     RowBox[{"Input", "[", "\"\<Enter The Value Of Resistance\>\"", "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Capacitor", "=", 
+     RowBox[{"Input", "[", "\"\<Enter The Value Of Capacitance\>\"", "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"L", "=", 
+     RowBox[{"Input", "[", "\"\<Enter The Value Of L\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Omega]", "0"], "=", 
+     SqrtBox[
+      FractionBox["1", 
+       RowBox[{"L", " ", "Capacitor"}]]]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Zeta]", " ", "=", " ", 
+     FractionBox["1", 
+      RowBox[{"2", " ", 
+       SubscriptBox["\[Omega]", "0"], " ", "R", " ", "Capacitor"}]]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eqn1", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["V", "c"], "''"}], "[", "t", "]"}], "+", 
+       RowBox[{"2", " ", "\[Zeta]", " ", 
+        SubscriptBox["\[Omega]", "0"], " ", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["V", "c"], "'"}], "[", "t", "]"}]}], "+", 
+       RowBox[{
+        SuperscriptBox[
+         SubscriptBox["\[Omega]", "0"], "2"], " ", 
+        RowBox[{
+         SubscriptBox["V", "c"], "[", "t", "]"}]}]}], "\[Equal]", "0"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"capVoltage", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"DSolve", "[", 
+        RowBox[{"eqn1", ",", 
+         RowBox[{
+          SubscriptBox["V", "c"], "[", "t", "]"}], ",", "t"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "//", "N"}], "//", "Simplify"}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.734052861900692*^9, 3.734052988363677*^9}, {
+   3.734053075146472*^9, 3.7340531081202307`*^9}, {3.734053141836722*^9, 
+   3.734053187624186*^9}, {3.734053263741963*^9, 3.734053457343495*^9}, {
+   3.7340534893051*^9, 3.734053561845336*^9}, {3.734053593018654*^9, 
+   3.734053760093659*^9}, {3.7340538312722816`*^9, 3.7340538431635733`*^9}, 
+   3.7340539100668573`*^9, 3.7340539456072083`*^9, {3.734055099196334*^9, 
+   3.734055147436082*^9}, {3.734055202518159*^9, 3.7340552268504343`*^9}, {
+   3.7340552698604918`*^9, 3.73405529320345*^9}, {3.734055337113884*^9, 
+   3.7340553844745293`*^9}, {3.734055447498681*^9, 3.734055448442235*^9}, {
+   3.734055484196343*^9, 3.734055484689694*^9}, {3.734055516000308*^9, 
+   3.7340555187213*^9}, 3.7340555747818413`*^9, {3.7340556306377563`*^9, 
+   3.734055758144227*^9}, {3.7340557952375174`*^9, 3.734055802593213*^9}, {
+   3.7340558421084013`*^9, 3.734055924847302*^9}, {3.734056051974762*^9, 
+   3.734056128753769*^9}, {3.73405616240453*^9, 3.73405617061555*^9}, {
+   3.7340562449351377`*^9, 3.734056245934537*^9}, {3.734102721620965*^9, 
+   3.73410276078762*^9}, {3.734102790954524*^9, 3.7341028520994062`*^9}, {
+   3.734102890843834*^9, 3.734102918608795*^9}, {3.734102978192812*^9, 
+   3.734103008041318*^9}, {3.734103048120438*^9, 3.734103067852213*^9}, {
+   3.734103103760556*^9, 3.734103130593783*^9}, {3.734103178019785*^9, 
+   3.73410317946278*^9}, {3.7341032186278048`*^9, 
+   3.7341032314491262`*^9}},ExpressionUUID->"3efab646-6b9f-42df-bb9c-\
+519a31efc5aa"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["V", "c"], "[", "t", "]"}], "\[Rule]", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "0.006666666666666667`"}], " ", "t"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"C", "[", "2", "]"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"5.65685032112001`", " ", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"C", "[", "1", "]"}], " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"5.65685032112001`", " ", "t"}], "]"}]}]}], ")"}]}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.734102772478113*^9, {3.734102834632494*^9, 3.7341028614582567`*^9}, 
+   3.734102930037126*^9, 3.734102980946945*^9, 3.7341030173581*^9, 
+   3.7341031457119923`*^9, 
+   3.734103190353537*^9},ExpressionUUID->"2dd3ae15-d7da-432d-a936-\
+69da17cb6995"]
+}, Open  ]]
+},
+WindowSize->{808, 937},
+WindowMargins->{{88, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3667, 82, 329, "Input", "ExpressionUUID" -> \
+"3efab646-6b9f-42df-bb9c-519a31efc5aa"],
+Cell[4250, 106, 870, 25, 35, "Output", "ExpressionUUID" -> \
+"2dd3ae15-d7da-432d-a936-69da17cb6995"]
+}, Open  ]]
+}
+]
+*)
+
