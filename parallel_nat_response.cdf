@@ -1,87 +1,50 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
+(* Content-type: application/vnd.wolfram.cdf.text *)
 
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
 
 (* CreatedBy='Mathematica 11.1' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*  The Mathematica License under which this file was created prohibits  *)
+(*  restricting third parties in receipt of this file from republishing  *)
+(*  or redistributing it by any means, including but not limited to      *)
+(*  rights management or terms of use, without the express consent of    *)
+(*  Wolfram Research, Inc. For additional information concerning CDF     *)
+(*  licensing and redistribution see:                                    *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       158,          7]
-NotebookDataLength[    137884,       2520]
-NotebookOptionsPosition[    136309,       2478]
-NotebookOutlinePosition[    136825,       2499]
-CellTagsIndexPosition[    136782,       2496]
+NotebookDataPosition[      1064,         20]
+NotebookDataLength[    136443,       2455]
+NotebookOptionsPosition[    135495,       2418]
+NotebookOutlinePosition[    136011,       2439]
+CellTagsIndexPosition[    135968,       2436]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[{
- RowBox[{
-  StyleBox["This", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["program", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["gets", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["the", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["natural", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["response", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox[
-   RowBox[{"(", 
-    RowBox[{
-     FormBox[
-      SubscriptBox["V", "s"],
-      TraditionalForm], "=", "0"}], ")"}], "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["of", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["a", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["simple", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["parallel", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  StyleBox["RLC", "Title",
-   FontSize->24], 
-  StyleBox[" ", "Title",
-   FontSize->24], 
-  RowBox[{
-   StyleBox["circuit", "Title",
-    FontSize->24], 
-   StyleBox[".", "Title",
-    FontSize->24], 
-   StyleBox["\n", "Text"], 
-   StyleBox[
-    GraphicsBox[
-     TagBox[RasterBox[CompressedData["
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "This program gets the natural response (",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["V", "s"], TraditionalForm]],ExpressionUUID->
+  "dc217782-24fd-4757-b052-08ce27792f21"],
+ "=0) of a simple parallel RLC circuit."
+}], "Section",ExpressionUUID->"9a85bfcb-6595-4178-800f-06ae4277c416"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
 1:eJzs3Qc81e3/P/C7SVOD9t5Le2lpiEooSWnQTqmkpaGiqUFpU6RN0hCVQhGV
 kUSUlb3XwTmHcxw+/3f8vt33v7vujJNjvJ6P7+N+HJzjXB/fd9d1vc7n+lyf
 7it0VdfU/euvv7aK039Ul+tP2bJl+a55LeiL+Zu2rlu7afWqmZu2rV67esvY
@@ -1885,61 +1848,35 @@ IF8ikYjD4ejt7X306NHt27c3q5Jr167V1tbeunWrq6vL7XbzBhcAAACAfIlG
 o06n02KxPH78WK/X/48qqa+vlwX6+vo8Hg89AgAAACBfpEpcLtfAwMCTJ0/u
 3r2bS5V4vV7Vew0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAADgv/4FUxPiJQ==
-       "], {{0, 643}, {1074, 0}}, {0, 255},
-       ColorFunction->RGBColor],
-      BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-      Selectable->False],
-     DefaultBaseStyle->"ImageGraphics",
-     ImageSize->{323., Automatic},
-     ImageSizeRaw->{1074, 643},
-     PlotRange->{{0, 1074}, {0, 643}}], "Text"]}]}], "\n", 
- StyleBox[
-  RowBox[{"\[Tau]", "=", 
-   RowBox[{
-    FormBox[
-     FractionBox["1", 
-      RowBox[{"\[Omega]", "(", 
+    "], {{0, 643}, {1074, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{323., Automatic},
+  ImageSizeRaw->{1074, 643},
+  PlotRange->{{0, 1074}, {0, 643}}]], "Input",ExpressionUUID->"9bd353c1-8e1b-\
+4b32-86d0-015f17cc8a27"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\[Tau] = ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    RowBox[{"\[Omega]", "(", 
+     RowBox[{
+      RowBox[{"-", "\[Zeta]"}], "\[PlusMinus]", 
+      SqrtBox[
        RowBox[{
-        RowBox[{"-", "\[Zeta]"}], "\[PlusMinus]", 
-        SqrtBox[
-         RowBox[{
-          SuperscriptBox["\[Zeta]", "2"], "-", "1"}]]}], ")"}]],
-     TraditionalForm], "Critically", " ", "Damped", " ", "Example", " ", 
-    RowBox[{"Values", ":", 
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{"L", "&"}], " ", "C", " ", "must", " ", "be", " ", "large", 
-       " ", "for", " ", "\[Tau]", " ", "to", " ", "be", " ", "small", " ", 
-       "enough", " ", "to", " ", "graph"}], ")"}]}]}]}], "Section",
-  FontSize->16], "\n", 
- StyleBox[
-  RowBox[{
-   RowBox[{"L", "=", "C"}], ",", 
-   RowBox[{
-    RowBox[{"R", "=", "0.5"}], ";"}]}], "Section",
-  FontSize->16], "\n", 
- StyleBox[
-  RowBox[{
-   RowBox[{
-    RowBox[{"Underdamped", " ", "Example", " ", 
-     RowBox[{"Values", ":", "R"}]}], "=", 
-    RowBox[{"500", "k\[CapitalOmega]"}]}], ",", 
-   RowBox[{"C", "=", 
-    RowBox[{"6", "uF"}]}], ",", 
-   RowBox[{
-    RowBox[{"L", "=", 
-     RowBox[{"9", "nH"}]}], ";"}]}], "Section",
-  FontSize->16], "\n", 
- StyleBox[
-  RowBox[{
-   RowBox[{
-    RowBox[{"Overdamped", " ", "Example", " ", 
-     RowBox[{"Values", ":", "R"}]}], "=", "0.3"}], ",", 
-   RowBox[{
-    RowBox[{"C", "=", 
-     RowBox[{"L", "=", "1"}]}], ";"}]}], "Section",
-  FontSize->16]}], "Text",ExpressionUUID->"2e78f9d5-1c71-45c2-bd62-\
-aed19f755177"],
+        SuperscriptBox["\[Zeta]", "2"], "-", "1"}]]}], ")"}]], 
+   TraditionalForm]],ExpressionUUID->"29865f0d-fd1a-4884-912f-6c38d46b3413"],
+ "\nCritically Damped Example Values: (L & C must be large for \[Tau] to be \
+small enough to graph)\nL=C, R=0.5;\nUnderdamped Example Values: \nR = 500k\
+\[CapitalOmega], C = 6uF, L = 9nH;\nOverdamped Example Values:  \nR = 0.3, C \
+= L = 1;"
+}], "Subsection",ExpressionUUID->"5c9bb227-52ae-4974-8b02-19405b60857d"],
 
 Cell[CellGroupData[{
 
@@ -2177,8 +2114,9 @@ Cell[BoxData[
       RowBox[{"b", ",", 
        RowBox[{
         RowBox[{"-", "1"}], "+", ".01"}], ",", "20"}], "}"}], ",", 
-     RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}]}]], "Input",E\
-xpressionUUID->"121aff0c-3158-45d1-ae3c-f1edc683ccd4"],
+     RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}], 
+   "\[IndentingNewLine]"}]}]], "Input",ExpressionUUID->"5a82db32-d598-4d00-\
+9e37-3b66639d5010"],
 
 Cell[BoxData[
  StyleBox[
@@ -2193,8 +2131,8 @@ Cell[BoxData[
   GraphicsColor->RGBColor[0, 0, 1],
   FontSize->20,
   FontWeight->Bold,
-  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"8de5e8c0-59f6-\
-4ae5-9ffd-2e28b7ddac9d"],
+  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"aea8b111-d0ce-\
+4dc4-9d4b-32f6caacae6e"],
 
 Cell[BoxData[
  StyleBox[
@@ -2218,8 +2156,8 @@ SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"3.`\\\", \\\" \\\", \\\"t\
   BackFaceColor->RGBColor[0, 0, 1],
   GraphicsColor->RGBColor[0, 0, 1],
   FontSize->18,
-  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"2b0694d4-5dc9-\
-4718-9cd1-d26a4e93e055"],
+  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"bcfeb606-efef-\
+4ab4-b5fb-4a4fe0181da9"],
 
 Cell[BoxData[
  TagBox[
@@ -2230,11 +2168,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`b$$], -0.99, 20}}, Typeset`size$$ = {
     324., {91., 97.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`b$25026$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`b$28930$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`b$$ = -0.99}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`b$$, $CellContext`b$25026$$, 0]}, 
+        Hold[$CellContext`b$$, $CellContext`b$28930$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2261,8 +2199,8 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Animate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"22108741-\
-a724-444c-bc9f-88494aaea660"],
+  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"6450dbd2-\
+65f3-4f3b-a8c8-a4cc2d99c175"],
 
 Cell[BoxData[
  StyleBox[
@@ -2296,23 +2234,23 @@ SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"3.`\\\", \\\" \\\", \\\"t\
   BackFaceColor->RGBColor[0, 0, 1],
   GraphicsColor->RGBColor[0, 0, 1],
   FontSize->18,
-  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"e58f1109-c58c-\
-4a8b-99a4-0a30f6ad9947"],
+  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"3a3efda3-ac56-\
+4215-b9dd-6cbd6e05db2a"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`b$$ = 6.414781311988829, Typeset`show$$ = 
+   DynamicModuleBox[{$CellContext`b$$ = 18.57452698612213, Typeset`show$$ = 
     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`b$$], -0.99, 20}}, Typeset`size$$ = {
-    324., {92., 97.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`b$25094$$ = 0}, 
+    324., {92., 96.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`b$28998$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`b$$ = -0.99}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`b$$, $CellContext`b$25094$$, 0]}, 
+        Hold[$CellContext`b$$, $CellContext`b$28998$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2339,8 +2277,8 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Animate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"e75ce131-\
-7eca-4bcf-8af7-1dca6fcdf733"],
+  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"5e0d1d1f-\
+cb0f-4000-98b6-49496aafe993"],
 
 Cell[BoxData[
  StyleBox[
@@ -2362,23 +2300,23 @@ RowBox[{\\\"8.999999999999996`\\\", \\\" \\\", SuperscriptBox[\\\"\
   BackFaceColor->RGBColor[0, 0, 1],
   GraphicsColor->RGBColor[0, 0, 1],
   FontSize->18,
-  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"46e933d7-c6c6-\
-4443-a5f1-fff7391bc372"],
+  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"a6280b3f-57f7-\
+4287-add8-bcdf584939c3"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`b$$ = -0.99, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`b$$ = 15.319170907974241`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`b$$], -0.99, 20}}, Typeset`size$$ = {
     324., {93., 98.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`b$25158$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`b$29062$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`b$$ = -0.99}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`b$$, $CellContext`b$25158$$, 0]}, 
+        Hold[$CellContext`b$$, $CellContext`b$29062$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2394,7 +2332,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{371., {128., 134.}},
+     ImageSizeCache->{371., {133., 139.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -2404,8 +2342,8 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Animate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"67bc965e-\
-e042-49ed-b2de-b131a248bedc"],
+  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"94b16f4e-\
+3e1d-4725-b3e3-ed45a1981190"],
 
 Cell[BoxData[
  StyleBox[
@@ -2429,23 +2367,23 @@ RowBox[{\\\"3.`\\\", \\\" \\\", \\\"t\\\"}]]}]}], \\\")\\\"}]}]\\)\"\>",
   BackFaceColor->RGBColor[0, 0, 1],
   GraphicsColor->RGBColor[0, 0, 1],
   FontSize->18,
-  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"7c56a2fc-48a6-\
-4392-b349-93bda74205ce"],
+  FontColor->RGBColor[0, 0, 1]]], "Output",ExpressionUUID->"a12fb9de-809f-\
+4c1d-9883-b0e09ee5bff8"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`b$$ = -0.99, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`b$$ = 18.75708571434021, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`b$$], -0.99, 20}}, Typeset`size$$ = {
-    324., {91., 95.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`b$25222$$ = 0}, 
+    324., {97., 101.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`b$29126$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`b$$ = -0.99}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`b$$, $CellContext`b$25222$$, 0]}, 
+        Hold[$CellContext`b$$, $CellContext`b$29126$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2462,7 +2400,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{371., {126., 132.}},
+     ImageSizeCache->{371., {132., 138.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -2472,12 +2410,14 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Animate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"5a17f540-\
-ff6d-4ad5-ae8f-c4018816fecb"]
+  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"14109e06-\
+c9f1-4ba3-80ea-1503bae0a62d"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{682, 820},
-WindowMargins->{{22, Automatic}, {Automatic, 14}},
+WindowMargins->{{335, Automatic}, {Automatic, 0}},
 Visible->True,
 ScrollingOptions->{"VerticalScrollRange"->Fit},
 ShowCellBracket->Automatic,
@@ -2498,31 +2438,40 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 113193, 1921, 418, "Text", "ExpressionUUID" -> \
-"2e78f9d5-1c71-45c2-bd62-aed19f755177"],
 Cell[CellGroupData[{
-Cell[113776, 1945, 8463, 235, 796, "Input", "ExpressionUUID" -> \
-"121aff0c-3158-45d1-ae3c-f1edc683ccd4"],
-Cell[122242, 2182, 535, 14, 36, "Output", "ExpressionUUID" -> \
-"8de5e8c0-59f6-4ae5-9ffd-2e28b7ddac9d"],
-Cell[122780, 2198, 1158, 23, 37, "Output", "ExpressionUUID" -> \
-"2b0694d4-5dc9-4718-9cd1-d26a4e93e055"],
-Cell[123941, 2223, 2082, 41, 276, "Output", "ExpressionUUID" -> \
-"22108741-a724-444c-bc9f-88494aaea660"],
-Cell[126026, 2266, 1886, 33, 90, "Output", "ExpressionUUID" -> \
-"e58f1109-c58c-4a8b-99a4-0a30f6ad9947"],
-Cell[127915, 2301, 2094, 41, 276, "Output", "ExpressionUUID" -> \
-"e75ce131-7eca-4bcf-8af7-1dca6fcdf733"],
-Cell[130012, 2344, 959, 21, 33, "Output", "ExpressionUUID" -> \
-"46e933d7-c6c6-4443-a5f1-fff7391bc372"],
-Cell[130974, 2367, 2071, 40, 278, "Output", "ExpressionUUID" -> \
-"67bc965e-e042-49ed-b2de-b131a248bedc"],
-Cell[133048, 2409, 1160, 23, 37, "Output", "ExpressionUUID" -> \
-"7c56a2fc-48a6-4392-b349-93bda74205ce"],
-Cell[134211, 2434, 2082, 41, 274, "Output", "ExpressionUUID" -> \
-"5a17f540-ff6d-4ad5-ae8f-c4018816fecb"]
+Cell[1486, 35, 302, 7, 98, "Section", "ExpressionUUID" -> \
+"9a85bfcb-6595-4178-800f-06ae4277c416"],
+Cell[1791, 44, 110384, 1814, 188, "Input", "ExpressionUUID" -> \
+"9bd353c1-8e1b-4b32-86d0-015f17cc8a27"],
+Cell[CellGroupData[{
+Cell[112200, 1862, 659, 16, 268, "Subsection", "ExpressionUUID" -> \
+"5c9bb227-52ae-4974-8b02-19405b60857d"],
+Cell[CellGroupData[{
+Cell[112884, 1882, 8490, 236, 814, "Input", "ExpressionUUID" -> \
+"5a82db32-d598-4d00-9e37-3b66639d5010"],
+Cell[121377, 2120, 535, 14, 36, "Output", "ExpressionUUID" -> \
+"aea8b111-d0ce-4dc4-9d4b-32f6caacae6e"],
+Cell[121915, 2136, 1158, 23, 37, "Output", "ExpressionUUID" -> \
+"bcfeb606-efef-4ab4-b5fb-4a4fe0181da9"],
+Cell[123076, 2161, 2082, 41, 276, "Output", "ExpressionUUID" -> \
+"6450dbd2-65f3-4f3b-a8c8-a4cc2d99c175"],
+Cell[125161, 2204, 1886, 33, 90, "Output", "ExpressionUUID" -> \
+"3a3efda3-ac56-4215-b9dd-6cbd6e05db2a"],
+Cell[127050, 2239, 2094, 41, 276, "Output", "ExpressionUUID" -> \
+"5e0d1d1f-cb0f-4000-98b6-49496aafe993"],
+Cell[129147, 2282, 959, 21, 33, "Output", "ExpressionUUID" -> \
+"a6280b3f-57f7-4287-add8-bcdf584939c3"],
+Cell[130109, 2305, 2085, 40, 288, "Output", "ExpressionUUID" -> \
+"94b16f4e-3e1d-4725-b3e3-ed45a1981190"],
+Cell[132197, 2347, 1160, 23, 37, "Output", "ExpressionUUID" -> \
+"a12fb9de-809f-4c1d-9883-b0e09ee5bff8"],
+Cell[133360, 2372, 2095, 41, 286, "Output", "ExpressionUUID" -> \
+"14109e06-c9f1-4ba3-80ea-1503bae0a62d"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
 
+(* NotebookSignature CwTUZEFYByY55DKSJ7lzW2yx *)
