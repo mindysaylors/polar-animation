@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5610,        158]
-NotebookOptionsPosition[      4859,        133]
-NotebookOutlinePosition[      5214,        149]
-CellTagsIndexPosition[      5171,        146]
+NotebookDataLength[      5319,        138]
+NotebookOptionsPosition[      4869,        119]
+NotebookOutlinePosition[      5224,        135]
+CellTagsIndexPosition[      5181,        132]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,108 +27,94 @@ Cell[BoxData[
   "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
-   RowBox[{"n", " ", "=", " ", 
-    RowBox[{"Input", "[", "\"\<Enter The Number Of Poles\>\"", "]"}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"listOfPoles", " ", "=", 
-    RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"n", " ", "=", " ", 
+     RowBox[{"Input", "[", "\"\<Enter The Number Of Poles\>\"", "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"listOfPoles", " ", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Input", "[", "\"\<Enter The Value Of The Pole\>\"", "]"}], 
+       ",", "n"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"listOfTerms", "=", 
      RowBox[{
-      RowBox[{"Input", "[", "\"\<Enter The Value Of The Pole\>\"", "]"}], ",",
-       "n"}], "]"}]}], "\n", 
-   RowBox[{"listOfTerms", "=", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"(", 
-       FractionBox["1", 
-        RowBox[{"1", "+", 
-         FractionBox[
-          RowBox[{"\[ImaginaryJ]", " ", "\[Omega]"}], "#"]}]], ")"}], "&"}], 
-     "[", "listOfPoles", "]"}]}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"(", 
+        FractionBox["1", 
+         RowBox[{"1", "+", 
+          FractionBox[
+           RowBox[{"\[ImaginaryJ]", " ", "\[Omega]"}], "#"]}]], ")"}], "&"}], 
+      "[", "listOfPoles", "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"largestPole", "=", 
      RowBox[{"Max", "[", "listOfPoles", "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"H", "=", 
-    RowBox[{"Times", "@@", "listOfTerms"}]}]}]}]], "Input",
+   RowBox[{"(*", 
+    RowBox[{"H", "=", 
+     RowBox[{"Times", "@@", "listOfTerms"}]}], "*)"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"H", "[", "\[Omega]_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Times", "@@", 
+       RowBox[{"(", 
+        FractionBox["1", 
+         RowBox[{"1", "+", 
+          FractionBox[
+           RowBox[{"\[ImaginaryJ]", " ", "\[Omega]"}], "#"]}]], ")"}]}], 
+      "&"}], "[", "listOfPoles", "]"}]}], 
+   RowBox[{"(*", 
+    RowBox[{"This", " ", "makes", " ", "the", " ", "function", " ", 
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"i", "=", "1"}], "n"], 
+      FractionBox["1", 
+       RowBox[{"1", "+", 
+        FractionBox["\[ImaginaryJ]\[Omega]", 
+         SubscriptBox["p", "i"]]}]]}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<H(\[ImaginaryJ]\[Omega])= ``\>\"", ",", 
+     RowBox[{"H", "[", "\[Omega]", "]"}]}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.737832059942648*^9, 3.737832167628564*^9}, {
-  3.737832339632772*^9, 3.737832344679579*^9}, {3.7378446101761847`*^9, 
-  3.7378446510856647`*^9}, {3.7378447103778057`*^9, 3.737844757475672*^9}, {
-  3.737844819096277*^9, 3.737844824309469*^9}, {3.737844855193919*^9, 
-  3.737844902044483*^9}, {3.737844940695665*^9, 
-  3.7378449906066923`*^9}},ExpressionUUID->"58d02735-3633-4817-b761-\
+   3.737832339632772*^9, 3.737832344679579*^9}, {3.7378446101761847`*^9, 
+   3.7378446510856647`*^9}, {3.7378447103778057`*^9, 3.737844757475672*^9}, {
+   3.737844819096277*^9, 3.737844824309469*^9}, {3.737844855193919*^9, 
+   3.737844902044483*^9}, {3.737844940695665*^9, 3.7378449906066923`*^9}, {
+   3.737845323208199*^9, 3.737845505924623*^9}, {3.7378456706626577`*^9, 
+   3.737845675291951*^9}, {3.737845886200021*^9, 3.737845886621935*^9}, {
+   3.737845957586537*^9, 3.737845957832992*^9}, {3.737846090972183*^9, 
+   3.737846147192461*^9}, {3.7378465463515577`*^9, 3.737846555729426*^9}, {
+   3.737846588233334*^9, 3.737846641208583*^9}, {3.737846749191462*^9, 
+   3.737846816881297*^9}, {3.737846880574719*^9, 3.737846900507086*^9}, {
+   3.737846950574287*^9, 3.7378470321409407`*^9}, 
+   3.7378470817018757`*^9},ExpressionUUID->"58d02735-3633-4817-b761-\
 91c4cd74c9c5"],
 
-Cell[BoxData["4"], "Output",
- CellChangeTimes->{{3.737844328359079*^9, 3.7378443496931057`*^9}, 
-   3.737844461311923*^9, 3.737844575891604*^9, {3.7378446168752604`*^9, 
-   3.737844653817772*^9}, {3.737844723500078*^9, 3.737844760147519*^9}, {
-   3.7378448269904118`*^9, 3.737844869892467*^9}, 3.7378449045085707`*^9, {
-   3.737844945135737*^9, 
-   3.73784499489832*^9}},ExpressionUUID->"bd117b32-2b45-4355-a7a8-\
-4526fb734e99"],
-
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]], "Output",
- CellChangeTimes->{{3.737844328359079*^9, 3.7378443496931057`*^9}, 
-   3.737844461311923*^9, 3.737844575891604*^9, {3.7378446168752604`*^9, 
-   3.737844653817772*^9}, {3.737844723500078*^9, 3.737844760147519*^9}, {
-   3.7378448269904118`*^9, 3.737844869892467*^9}, 3.7378449045085707`*^9, {
-   3.737844945135737*^9, 
-   3.73784499747101*^9}},ExpressionUUID->"a0d24959-7414-4b47-8d50-\
-9c239fae52fb"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   FractionBox["1", 
-    RowBox[{"1", "+", 
-     RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}]], ",", 
-   FractionBox["1", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "2"]}]], ",", 
-   FractionBox["1", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "3"]}]], ",", 
-   FractionBox["1", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "4"]}]]}], "}"}]], "Output",\
-
- CellChangeTimes->{{3.737844328359079*^9, 3.7378443496931057`*^9}, 
-   3.737844461311923*^9, 3.737844575891604*^9, {3.7378446168752604`*^9, 
-   3.737844653817772*^9}, {3.737844723500078*^9, 3.737844760147519*^9}, {
-   3.7378448269904118`*^9, 3.737844869892467*^9}, 3.7378449045085707`*^9, {
-   3.737844945135737*^9, 
-   3.737844997504396*^9}},ExpressionUUID->"694aed8c-6113-4ff5-93aa-\
-8e37dca12625"],
-
-Cell[BoxData[
- FractionBox["1", 
-  RowBox[{
-   RowBox[{"(", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "4"]}], ")"}], " ", 
-   RowBox[{"(", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "3"]}], ")"}], " ", 
-   RowBox[{"(", 
-    RowBox[{"1", "+", 
-     FractionBox[
-      RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}], "2"]}], ")"}], " ", 
-   RowBox[{"(", 
-    RowBox[{"1", "+", 
-     RowBox[{"\[ImaginaryI]", " ", "\[Omega]"}]}], ")"}]}]]], "Output",
- CellChangeTimes->{{3.737844328359079*^9, 3.7378443496931057`*^9}, 
-   3.737844461311923*^9, 3.737844575891604*^9, {3.7378446168752604`*^9, 
-   3.737844653817772*^9}, {3.737844723500078*^9, 3.737844760147519*^9}, {
-   3.7378448269904118`*^9, 3.737844869892467*^9}, 3.7378449045085707`*^9, {
-   3.737844945135737*^9, 
-   3.737844997509769*^9}},ExpressionUUID->"b56e4f92-1cfd-4f4b-b4e0-\
-d9699f5911c3"]
+ InterpretationBox["\<\"H(\[ImaginaryJ]\[Omega])= \
+\\!\\(\\*FractionBox[\\\"1\\\", RowBox[{RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \
+\\\"+\\\", FractionBox[RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", \\\"\[Omega]\
+\\\"}], \\\"4\\\"]}], \\\")\\\"}], \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{\\\"1\\\", \\\"+\\\", FractionBox[RowBox[{\\\"\[ImaginaryI]\\\", \\\" \
+\\\", \\\"\[Omega]\\\"}], \\\"3\\\"]}], \\\")\\\"}], \\\" \\\", RowBox[{\\\"(\
+\\\", RowBox[{\\\"1\\\", \\\"+\\\", \
+FractionBox[RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", \\\"\[Omega]\\\"}], \
+\\\"2\\\"]}], \\\")\\\"}], \\\" \\\", RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \
+\\\"+\\\", RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", \\\"\[Omega]\\\"}]}], \\\
+\")\\\"}]}]]\\)\"\>",
+  StringForm["H(\[ImaginaryJ]\[Omega])= ``", (1 + Complex[0, 
+        Rational[1, 4]] $CellContext`\[Omega])^(-1) (1 + Complex[0, 
+        Rational[1, 3]] $CellContext`\[Omega])^(-1) (1 + Complex[0, 
+        Rational[1, 2]] $CellContext`\[Omega])^(-1)/(1 + 
+   Complex[0, 1] $CellContext`\[Omega])],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.737846794508471*^9, 3.737846824178586*^9}, {
+   3.737846869095873*^9, 3.737846905561178*^9}, 3.737846978374151*^9, {
+   3.7378470120197573`*^9, 3.737847045648078*^9}, 
+   3.737847087235119*^9},ExpressionUUID->"8cbaefd1-c071-4fdc-a9bf-\
+1f16b3abc87b"]
 }, Open  ]]
 },
 WindowSize->{808, 630},
@@ -149,20 +135,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 1448, 35, 197, "Input", "ExpressionUUID" -> \
+Cell[580, 22, 2923, 70, 277, "Input", "ExpressionUUID" -> \
 "58d02735-3633-4817-b761-91c4cd74c9c5"],
-Cell[2031, 59, 428, 7, 32, "Output", "ExpressionUUID" -> \
-"bd117b32-2b45-4355-a7a8-4526fb734e99"],
-Cell[2462, 68, 493, 9, 32, "Output", "ExpressionUUID" -> \
-"a0d24959-7414-4b47-8d50-9c239fae52fb"],
-Cell[2958, 79, 939, 25, 56, "Output", "ExpressionUUID" -> \
-"694aed8c-6113-4ff5-93aa-8e37dca12625"],
-Cell[3900, 106, 943, 24, 90, "Output", "ExpressionUUID" -> \
-"b56e4f92-1cfd-4f4b-b4e0-d9699f5911c3"]
+Cell[3506, 94, 1347, 22, 90, "Output", "ExpressionUUID" -> \
+"8cbaefd1-c071-4fdc-a9bf-1f16b3abc87b"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
